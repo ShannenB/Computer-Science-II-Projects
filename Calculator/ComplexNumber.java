@@ -9,6 +9,10 @@ public class ComplexNumber extends Number{
         
     }
     
+    public void changeRealNum(double newRealNum){
+        this.realNum = newRealNum;
+    }
+    
     public void changeImaginaryNum(double newNum){
         imaginaryNum = newNum;
     }
@@ -19,7 +23,12 @@ public class ComplexNumber extends Number{
     
     @Override
     public String toString(){
-        return imaginaryNum + "i";
+        if (realNum == 0)
+            return imaginaryNum + "i";
+        else if (imaginaryNum > 0)
+            return realNum + "+" + imaginaryNum + "i";
+        else
+            return realNum + "" + imaginaryNum + "i";
     }
     
     

@@ -1,11 +1,9 @@
+//Shannen Barrameda sib170130
 package Calculator;
 
-/**
- *
- * @author Shannen Barrameda
- */
 public class Number {
     public double realNum;
+    
     public Number(double value){
         this.realNum = value;
     }
